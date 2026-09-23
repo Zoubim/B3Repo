@@ -50,7 +50,7 @@ console.log("B3.3 Eleventh character: ", eleCharacter);
  * B3.4 - Slice and Substring functions
  * ---------
  */
-// Slice takes a start and end 
+// Slice and substring takes a start and end 
 // starts at index 5 (starts at 0)
 //  and ends at 9 (does not include index 9)
 const slicedString = myString.slice(5, 9);
@@ -61,3 +61,16 @@ const subString = anotherString.substring(6, 9);
 
 console.log("B3.4 slice(5, 9) of myString          :", slicedString);
 console.log("B3.4 subString(6, 9) of anotherString :", subString);
+
+/**
+ * ------------
+ * B3.5 - Change the case of strings to upper and lower cases
+ * ------------
+ */
+// uperName to store myName in capital letters
+const upperName = myName.toUpperCase();
+// lowerName to store myName in lower case letters
+const lowerName = myName.toLowerCase();
+
+console.log("B3.5 myName in upper case:", upperName);
+console.log("B3.5 myName in lower case:", lowerName);
