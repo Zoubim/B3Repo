@@ -44,3 +44,20 @@ const eleCharacter = myString.charAt(10);
 console.log("B3.3 Length of myString: ", stringLength);
 console.log("B3.3 First character:    ", firstCharacter);
 console.log("B3.3 Eleventh character: ", eleCharacter);
+
+/**
+ * ---------
+ * B3.4 - Slice and Substring functions
+ * ---------
+ */
+// Slice takes a start and end 
+// starts at index 5 (starts at 0)
+//  and ends at 9 (does not include index 9)
+const slicedString = myString.slice(5, 9);
+
+//subString slice characters at index 6 up to 8 
+//(have to put 9 as upper limit to include 8)
+const subString = anotherString.substring(6, 9);
+
+console.log("B3.4 slice(5, 9) of myString          :", slicedString);
+console.log("B3.4 subString(6, 9) of anotherString :", subString);
