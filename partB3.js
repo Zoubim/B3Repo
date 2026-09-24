@@ -74,3 +74,22 @@ const lowerName = myName.toLowerCase();
 
 console.log("B3.5 myName in upper case:", upperName);
 console.log("B3.5 myName in lower case:", lowerName);
+
+/**
+ * ----------
+ * B3.6 - Various utlities to create new strings
+ * ----------
+ */
+// Concat method to join hello and myName with a space inbetween
+const greeting = hello.concat(" ", myName);
+//trim method to remove first 3 spaces in anotherString
+const trimmedString = anotherString.trim();
+// Replace method to change "is a" to an empty space in myString
+const replacedString = myString.replace("is a", " ");
+//split method on myString to become an array
+const splitMethod = myString.split(" ");
+
+console.log("B3.6 concat   :", greeting);
+console.log("B3.6 trim     :", trimmedString);
+console.log("B3.6 replace  :", replacedString);
+console.log("B3.6 split    :", splitMethod);
