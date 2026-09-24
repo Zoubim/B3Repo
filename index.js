@@ -31,16 +31,15 @@ fs.writeFile(targetFileName, fileContent, (err) => {
     /**
  * Algo for reading from a file
  * readTextFile
- * Reads a text file and prints its contents 
- * @param {string} targetFileName - the name of the file to read
- * @returns {string} the contents of the file, or an empty string if error
+
  */
-readTextFile(targetFileName) {
-    fs.readFile(targetFileName, (err, data) => {
-    if(err) {
-        console.log("B3.9 Could not read the file", err);
+
+fs.readFile('output.txt', (err, fileText) => {
+    if (err) {
+        console.log("B3.9 Could not read the file:", err);
+        return;
     } else {
-        console.log("B3.9 The file contents are: " + targetFileName + ":");
-        console.log(data);
-    }})
-}
+        console.log("B3.9 The file contents are: ");
+        console.log(fileText.toString());
+    }
+});
